@@ -45,6 +45,7 @@ Tool Type | Tool/Link | Description
 **Function Inspector** | [CDA: Code Dynamic Analysis](http://split-code.com/cda.html) | [Freeware] *Tool for recording, filtering, and hacking function calls within applications or games. x86 support only. Previously open-source and known as [FunctionHacker](https://github.com/glmcdona/FunctionHacker). Tutorial video [here](https://www.youtube.com/watch?v=P0UXR861WYM).*
 **Function/API Inspector** | [API Monitor](http://www.rohitab.com/apimonitor) | [Freeware] *Allows you to monitor and control API calls made by applications and services.*
 **Function/API Inspector** | [SpyStudio](https://www.nektra.com/products/spystudio-api-monitor/) | [Freeware] *Shows and interprets calls, displaying the results in a structured way. Details registry keys and files that an application uses, COM objects, windows the application has created, errors and exceptions, and more. Tutorials [here](http://whiteboard.nektra.com/spystudio-2-0-quickstart).*
+**Function/API Inspector** | [Spy++](https://docs.microsoft.com/en-us/visualstudio/debugger/introducing-spy-increment) | [Freeware] *A powerful tool allowing you to--among other things--spy on messages to/from selected windows in applications.* NOTE: Spy++ is included with [Visual Studio](https://www.visualstudio.com/) (including the free version, [Community](https://www.visualstudio.com/vs/community/)), but can be ran as a standalone tool. Video tutorial [here](https://www.youtube.com/watch?v=WL8rk7pNGo0).
 **File Inspector** | [Exeinfo PE](http://exeinfo.atwebpages.com/) | [Freeware] *File packer/compressor detector which provides unpacking info and internal exe tools. A spiritual successor to [PEiD](https://www.aldeid.com/wiki/PEiD).*
 **.NET Deobfuscator/Unpacker** | [de4dot](https://github.com/0xd4d/de4dot) | [Open Source] *A .NET deobfuscator and unpacker written in C#. Most obfuscation from supported implementations can be completely restored (eg. string encryption), but symbol renaming is impossible to restore since the original names aren't (usually) part of the obfuscated assembly.*
 **Data Type/Structure Reconstructor** | [ReClassEx](https://github.com/dude719/ReClassEx) | [Open Source] *A tool that intellgently reconstructs data types. Based on the original [ReClass](https://github.com/CoolOppo/ReClass).*
@@ -57,6 +58,7 @@ Tool Type | Tool/Link | Description
 **Injector** | [Xenos](https://github.com/DarthTon/Xenos) | [Open Source] *A Windows DLL injector, based on the [Blackbone library](https://github.com/DarthTon/Blackbone).*
 **Compiler** | [Compiler Explorer](https://github.com/mattgodbolt/compiler-explorer) | [Open Source] *Run compilers interactively from your web browser and interact with the assembly!*
 **Memory Scanner/Tracer** | [PSR (Pointer Sequence Reverser)](https://github.com/nccgroup/psr/) | [Open Source] *Traces instructions executed prior to reading/writing from/to the provided address of a data member or object, then highlights relevant instructions, identifies vtable pointers, and more. Relevant whitepaper [here](https://www.nccgroup.trust/us/our-research/automated-reverse-engineering-of-relationships-between-data-structures-in-c-binaries/?research=Whitepapers).*
+**Memory Scanner/Data Structure Scanner** | [XenoScan](https://github.com/nickcano/XenoScan) | [Open Source] *Lua scriptable memory scanner written in C++. Supports complex scanning, custom structures, and automatic detection of complex structures (linked lists, binary tress, class instances, etc). Expandable with support for emulators. DEFCON Slides [here](https://github.com/nickcano/XenoScanSlides).*
 
 ### Libraries, Frameworks, Plugins/Add-ons/Extensions, Etc.
 
@@ -118,7 +120,8 @@ Title/Link | Description
 [Reverse Engineering Visual Novels 101, Part 1](https://hackernoon.com/reverse-engineering-visual-novels-101-d0bc3bf7ab8) | A detailed tutorial on using [Kaitai Struct](http://kaitai.io/) to reverse engineer unknown formats.
 [Reverse Engineering Visual Novels 101, Part 2](https://hackernoon.com/reverse-engineering-visual-novels-101-part-2-9258f547262a) | A detailed tutorial on using [Kaitai Struct](http://kaitai.io/) to reverse engineer unknown formats (continued from above).
 [Exploiting Game Engines for Fun and Profit](http://revuln.com/files/Ferrante_Auriemma_Exploiting_Game_Engines.pdf) | This slide deck shows you methods to exploit game engines, effictively discovering attack vectors that will work across multiple games using the same engine.
-
+[Hooking LuaJIT](https://nickcano.com/hooking-luajit/) | A blog post demonstrating how hooking into a game's scripting engine (in this case, LuaJIT) can expedite the reversing process and enable side-loading of custom scripts.
+[Reversing LoL Client w/ Custom API Monitor Definitions](https://nickcano.com/reversing-league-of-legends-client/) | This quick blog post shows how [custom rules](https://github.com/nickcano/LibCEF-API-Monitor-Definitions/blob/master/LibCEF.xml) for [API Monitor](http://www.rohitab.com/apimonitor) can be utilized to aid in the reversing process.
 
 ### Interesting/Educational Forum Discussions
 
@@ -134,6 +137,8 @@ Title/Link | Description
 
 Title/Link | Description
 ---- | ----
+[Introduction to IDA Pro (x86/x64, via Windows)](https://www.youtube.com/watch?v=cGDcTSCB7y4) | A well-paced, cursory overview of IDA Pro. It's given in the context of malware analysis, but everything you learn can be directly applied to game hacking.
+[Introduction to IDA Pro (ARM, via Mac)](https://www.youtube.com/watch?v=wwo9KjVg-HY) | An example-laden overview of reverse engineering ARM binaries via IDA Pro. It's given in the context of malware analysis, but everything you learn can be directly applied to game hacking.
 [Motherboard Livestream Archive: Researcher Cracks Elder Scrolls Online, Dark Age of Camelot, and Wildstar](https://www.youtube.com/embed/iYTCBPUn98c?start=186&end=6620) | Adrian Bednarek, better known as "Manfred", demonstrates the MMORPG hacks he wanted to show but couldn't during [his DEF CON 25 presentation](https://tknk.io/DScz). This is a rare glimpse into the tools, thoughts, and approaches of a professional online game hacker!
 [Hacking Games in a Hacked Game](https://vimeo.com/132900706) | This video discusses goes over the results of those who solved CTF challenges in Pwn Adventure 3 at [Ghost in the Shellcode 2015](http://ghostintheshellcode.com/). Slides [here](https://github.com/Vector35/HackingGames).
 [The Security of Classic Game Consoles](https://www.youtube.com/watch?v=jkl5NJrRKgA) | A presentation demonstrating the technical details of what went into protecting the security of classic game consoles, as well as how those protections were broken.
